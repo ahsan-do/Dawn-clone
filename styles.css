@@ -1,0 +1,526 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    margin-left: 80px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 250px;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s ease;
+    z-index: 1000;
+}
+
+.nav-links li {
+     justify-content: start;
+     margin: 15px 0;  
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: small;
+    color: rgb(112, 112, 112);
+   
+}
+
+.dropdn {
+    width: 8px;
+    height: 8px;
+    padding-left: 4px;
+}
+
+.cart{
+    display: flex;
+    margin-right: 80px;
+}
+
+.cart a {
+    color: #333;
+    text-decoration: none;
+    width: 100%;
+    height: 25px;
+    width: 25px;
+    margin: 0px 12px ;
+}
+
+.cart img {
+    height: 25px;
+    width: 25px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+.hero {
+    background: url('https://img.pikbest.com/wp/202409/stun-abstract-fashion-background-blue-cloth-in-stunning-3d-rendering_9727406.jpg!sw800') no-repeat center center/cover;
+    height: 700px;
+    display: flex;
+    color: #fff;
+    background-attachment: fixed;
+    text-align: center;
+    
+}
+
+
+.hero-text{
+    align-items:flex-end;
+    width: 100%;
+    height: 90%;
+    align-content:flex-end;
+}
+
+.hero-text h2 {
+    font-weight: 400;
+    font-size: 3em;
+    margin: 0;
+    
+}
+
+
+.hero-text p {
+    font-size: 14px;
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    border: 0.5px solid #fff;
+    background: none;
+}
+
+
+.product-heading {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.products {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 300px 300px;
+    grid-gap: 80px 8px;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.product-item h3 {
+    font-weight: 100;
+    text-align: left;
+    font-size: 14px;
+    margin: 5px 0px;
+}
+
+.product-item p {
+    margin-top: 2px;
+    font-size: 1 em;
+    color: #333;
+    text-align: left;
+}
+
+
+.back-in-stock {
+    padding: 20px;
+    text-align: left;
+    
+}
+
+.back-in-stock .product-grid {
+    display: grid;
+    grid-gap: 275px 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.product-item-1 h2 {
+   font-weight: 200;
+}
+
+.product-item-1 {
+    grid-column-start: 1;
+    grid-column-end: span col4-start;
+    grid-row-start: 1;
+    grid-row-end: span3;
+    margin-left: 20px;
+}
+
+.product-item-1 img {
+    height: 750px;
+    height: 800px;
+    width: 900px;
+    justify-content: center;
+}
+
+.product-item-1 .right-arrow{
+    height: 16px;
+    width: 16px;
+
+}
+
+.product-item-3 .right-arrow{
+    padding-top: 0;
+    height: 16px;
+    width: 16px;    
+}
+
+.product-item-2 {
+    margin-top: 72px;
+    grid-column-start: 4;
+    grid-column-end: span col4-start;
+    grid-row-start: 1;
+    grid-row-end: span3;
+}
+
+.product-item-2 img {
+    height: 400px;
+    width: 300px;
+}
+
+.product-item-2 h3 {
+    font-weight: 300;
+    font-size: 14px;
+    margin: 10px 0px;
+    margin: 10px 0px;
+}
+
+.product-item-2 p {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+}
+
+.product-item-3 {
+    grid-column-start: 4;
+    grid-column-end: span col6-start;
+    grid-row-start: 2;
+    grid-row-end: span2;
+}
+
+.product-item-3 img {
+    height: 300px;
+    width: 300px;
+}
+
+
+.video-section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.video-container {
+    position: relative;
+    padding-bottom: 40%;
+    height: 0;
+    overflow: hidden;
+    width: 800px;
+    height: auto;
+    background: #000;
+   
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.section-grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 450px 520px;
+    grid-template-rows: 300px;
+    grid-gap: 0px 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.section-item-1 {
+    text-align: center;
+}
+
+.section-item-2 {
+    text-align: center;
+    padding: 35px;
+}
+
+.section-item-1 img {
+    width: 100px;
+    height: auto;
+}
+
+.section-item-2 img {
+    width: 100px;
+    height: auto;
+}
+
+.section-item-1 p {
+    font-weight: 300;
+    font-size: 14px;
+    color: rgb(112, 112, 112);
+}
+
+.section-item-2 p {
+    font-weight: 300;
+    font-size: 14px;
+    color: rgb(112, 112, 112);
+}
+
+
+footer {
+    background-color: #fff;
+    color: #333;
+    padding: 0px;
+    margin: 0px 300px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: medium;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li {
+    margin: 20px 0;
+    color: rgb(112, 112, 112);
+    font-weight: 200;
+    font-size: 13px;
+}
+
+
+
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section a {
+    color: rgb(112, 112, 112);
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 10px;
+}
+
+
+.email-contact{
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ width: 100%;
+ border-bottom: 0.5px solid rgb(233, 232, 232);
+ padding-bottom: 50px;
+}
+
+
+.email {
+    padding: 20px;
+    margin: 5px;
+}
+
+.email input{
+    padding: 10px;
+    width: 250px;
+}
+
+
+.social-media img{
+    margin-top: 80px;
+    padding: 8px;
+}
+
+.country {
+    margin-top: 25px;
+    margin-left: 25px;
+
+}
+
+.country label {
+    font-size: small;
+    color: rgb(112, 112, 112);
+}
+
+select{
+    margin: 10px 0px;
+    padding: 10px 12px;
+    font-size: small;
+}
+
+
+/* Media Queries */
+@media (max-width: 990px) {
+
+    .nav-links {
+        display: none;
+        width: 25%;
+        flex-direction: column;
+        text-align: left;
+        height: 100%;
+    }
+
+    .nav-links{
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links.active {
+        left:0;
+    }
+
+    .hero {
+        height: 500px;
+    }
+
+    .hero-text h2 {
+        font-size: 2em;
+    }
+
+    .product-grid{
+        grid-template-columns: 400px 400px;
+        grid-template-rows: 400px 400px;
+    }
+    .back-in-stock .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .video-container {
+        padding-bottom: 75%;
+    }
+
+    .section-grid {
+    grid-template-columns: 800px;
+    grid-template-rows: 200px;
+    }
+
+    .section-item-1 img,
+    .section-item-2 img{
+        width: 150px;
+    }
+    
+    .section-item-1 p,
+    .section-item-2 p{
+        font-size: 13px;
+        line-height: 25px;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+    
+    footer{
+            margin: 0px 50px;
+    }
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-section a
+     {
+        margin: 100px 0px;
+    }
+
+    .footer-section contact p {
+    line-height: 100px;
+    }
+
+    .email p{
+        padding: 10px 0px;
+        margin: 0px;
+        text-align: left;
+    }
+
+    .email-contact {
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    
+}
