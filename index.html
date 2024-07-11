@@ -9,13 +9,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="">
     <header>
+        <p class="top-tag">Free shipping available on all orders!</p>
+        <div class="border"></div>
         <nav>
             <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+               <img class="bar" src="./icons/menu.png" alt="">
             </div>
             <div class="logo">
                 <h1>DAWN</h1>
@@ -37,7 +37,7 @@
     <main>
         <section class="hero">
             <div class="hero-text">
-                <h2>Industrial Design meets fashion</h2>
+                <h2>Industrial design meets fashion.</h2>
                 <p>Atypical leathers goods</p>
                 <button>Shop Now</button>
             </div>
@@ -45,7 +45,7 @@
         
         <section class="products">
             <p class="product-heading">Obsessive Attention. Intelligent Effort.</p>
-            <p>Functional handbangs made of luxurious materials to improve people's lives in small but mighty ways</p>
+            <p class="product-subheading">Functional handbangs made of luxurious materials to improve people's lives in small but mighty ways</p>
             <div class="product-grid">
                 <div class="product-item">
                     <img src="https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-convertible-flex-bag-cappuccino-n2.jpg?v=1637107143&width=360https://theme-dawn-demo.myshopify.com" alt="Product 1">
@@ -191,9 +191,11 @@
 <script>
     const menuToggle = document.querySelector('#mobile-menu');
     const navLinks = document.querySelector('.nav-links');
+    const body = document.body;
     
     menuToggle.addEventListener('click', () => {
         navLinks.classList.toggle('active');
+        body.classList.toggle('no-scroll');
     });
     </script>
 </body>
